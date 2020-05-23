@@ -1,0 +1,58 @@
+main {
+    width: 800px;
+    padding: 0rem 0rem;
+    flex: 5;
+}
+.main_top {
+    display: flex;
+    flex-direction: row;
+    padding: 0rem 1rem;
+    border-bottom: black solid;
+}
+
+.main_top .btn {
+    /* display: flex;
+    flex-direction: row; */
+    margin-left: 60rem;
+    width: 800px;
+    padding: 1.5rem 1rem;
+}
+
+.btn button {
+    margin: 0rem 1rem;
+}
+
+.main_center_top {
+    margin: 5rem 10rem;
+    border: darkgray solid;
+    height: 2rem;
+    border-width: 2px;
+}
+
+.main_center_top-left {
+    width: 80%;
+    height: 1.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.main_center_top-left select {
+    border: none;
+    height: 2rem;
+}
+
+.search input {
+    width: 1175px;
+    height: 1.7rem;
+    /* border-left: beige solid; */
+}
+
+.main_center_bottom {
+    height: 689px;
+    margin-top: -5rem;
+}
+
+.main_center_bottom h1 {
+    float: left;
+    margin-left: 10rem;
+}
