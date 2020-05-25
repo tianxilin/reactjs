@@ -1,16 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Greeting from './components/Greeting';
-//import Weather from './Weather';
-import Github from './components/Github';
-import Header from './components/Header';
+import Menu from './components/Menu';
 import Main from './components/Main';
+import './styles/app.css'
 
 function App() {
   return (
-    <div className="App">
-      <Header /> 
+    <div className="app">
+      <Menu />
       <Main />
     </div>
   );

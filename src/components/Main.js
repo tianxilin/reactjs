@@ -1,39 +1,66 @@
 import React from 'react';
 import '../styles/Main.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { 
+    faUsers, faSearch, faEnvelope,
+} from '@fortawesome/free-solid-svg-icons'
 
 const Main = () => {
-    return <main>
-        <div className="main_top">
-            <h1>Students</h1>
-            <div className="btn">
-                <button>Export CSV</button>
-                <button>Email Students</button>
-                <button>Add Students</button>
-            </div>
-        </div>
-        <div className="main_center">
-            <div className="main_center_top">
-                <div className="main_center_top-left">
+    return (
+        <main>
+            <section className="main__header">
+                <div>
+                    <FontAwesomeIcon icon={faUsers} />
+                    Students
+                </div>
+                <div>
+                    <button className="text">Export CSV</button>
+                    <button className="text">Email Students</button>
+                    <button className="secondary">Add Students</button>
+                </div>
+            </section>
+
+            <section className="main__table">
+                <div className="main__table__filter">
                     <select>
-                        <option value ="volvo">Add Filter</option>
-                        <option value ="saab">Add name</option>
-                        <option value="opel">Add Id</option>
-                        <option value="audi">Add email</option>
+                        <option>Add Filter</option>
+                        <option>Filter 1</option>
+                        <option>Filter 2</option>
                     </select>
-                    <div class="search">
-                        <input type="text" placeholder="Search for a user by name or email" name="search" id="1" value="" />
+                    <div className="container">
+                        <FontAwesomeIcon icon={faSearch} />
+                        <input type="text" placeholder="Search for a user by name"/>
                     </div>
                 </div>
-                <div className="main_center_top-right">
 
+                <div className="main__table__body">
+                    <h1>heading</h1>
+                    <ul>
+                        <li>
+                            <ul>
+                                <li><input type="checkbox" /></li>
+                                <li>name</li>
+                                <li>name</li>
+                                <li>name</li>
+                                <li>name</li>
+                                <li></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><input type="checkbox" /></li>
+                                <li>name</li>
+                                <li>name</li>
+                                <li>name</li>
+                                <li>name</li>
+                                <li><FontAwesomeIcon icon={faEnvelope} /></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div className="main_center_bottom">
-                <h1>Showing 1-1 of Students</h1>
-
-            </div>
-        </div>
-    </main>
+            </section>
+        </main>
+    )
 }
 
 export default Main;
